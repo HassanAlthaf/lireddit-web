@@ -31,7 +31,7 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
   } else {
     body = (
       <>
-        <Flex color={"white"}>
+        <Flex position={"sticky"} top={0} zIndex={1} color={"white"}>
           <Box mr={2}>{data.me.username}</Box>
           <Button
             variant={"link"}
